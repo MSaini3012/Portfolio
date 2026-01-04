@@ -37,7 +37,7 @@ const categories = [
 export function ProjectsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
-  const [activeCategory, setActiveCategory] = useState("Web Development")
+  const [activeCategory, setActiveCategory] = useState("All")
   const [showAll, setShowAll] = useState(false)
   const [projects, setProjects] = useState<Project[]>([{
   id: "spotify-top50",
